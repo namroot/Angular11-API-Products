@@ -1,18 +1,39 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { ProductsComponent } from './Components/products/products.component';
+import { HomeComponent } from './Components/home/home.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductAddComponent } from './Components/products/product-add/product-add.component';
+import { ProductEditComponent } from './components/products/product-edit/product-edit.component';
+import { ProductsNavBarComponent } from './components/products/products-nav-bar/products-nav-bar.component';
+import { ProductsListComponent } from './components/products/products-list/products-list.component';
+import { ProductItemComponent } from './components/products/products-list/product-item/product-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    ProductsComponent,
+    HomeComponent,
+    ProductAddComponent,
+    ProductEditComponent,
+    ProductsNavBarComponent,
+    ProductsListComponent,
+    ProductItemComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
