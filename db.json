@@ -29,7 +29,7 @@
       "name": "Hamid",
       "price": "500",
       "quantity": "1",
-      "selected": true,
+      "selected": false,
       "available": true
     }
   ]
