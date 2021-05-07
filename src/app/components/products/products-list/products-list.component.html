@@ -1,6 +1,6 @@
-<!-- <div class="container">
+<div class="container">
   <ng-container
-    *ngIf="products$ | async as result"
+    *ngIf="productsInput$ | async as result"
     [ngSwitch]="result.dataState"
   >
     <ng-container *ngSwitchCase="DataStateEnum.ERROR">{{
@@ -27,4 +27,4 @@
       </table>
     </ng-container>
   </ng-container>
-</div> -->
+</div>
